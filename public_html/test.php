@@ -1,5 +1,5 @@
 <?php
-$servername = "lemp_mariadb";
+$servername = "lemp_mariadb_npru";
 $username = "admin"; // ลองเปลี่ยนเป็น "root" ดูหากยังเข้าไม่ได้
 $password = "1234";
 $dbname = "titanic";

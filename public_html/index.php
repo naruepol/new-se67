@@ -1,5 +1,5 @@
 <?php
-$servername = "lemp_mariadb";
+$servername = "lemp_mariadb_npru";
 $username = "admin";
 $password = "1234";
 $dbhandle = mysqli_connect($servername, $username, $password);

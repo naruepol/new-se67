@@ -1,6 +1,6 @@
 <?php
 // Database Connection via PDO
-$servername = "lemp_mariadb";
+$servername = "lemp_mariadb_npru";
 $username = "admin";
 $password = "1234";
 $dbname = "titanic";
