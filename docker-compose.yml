@@ -13,7 +13,7 @@ services:
     restart: always
     # restart: unless-stopped
     networks:
-      - web_network_se
+      - web_network_senpru
   php:
     depends_on:
       - db
@@ -25,7 +25,7 @@ services:
       - "9000"
     restart: always
     networks:
-      - web_network_se
+      - web_network_senpru
   nginx:
     image: nginx:stable-alpine
     container_name: lemp_nginx
@@ -34,11 +34,11 @@ services:
       - ./nginx/conf/nginx.conf:/etc/nginx/conf/nginx.conf:ro
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
     ports:
-      - "8855:80"
+      - "8899:80"
     restart: always
     networks:
-      - web_network_se
+      - web_network_senpru
 networks:
-  web_network_se:
+  web_network_senpru:
     name: lemp
     driver: bridge
